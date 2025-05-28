@@ -2,65 +2,67 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Koleje Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kosodélníky z PDF</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #eee;
       padding: 40px 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 30px;
+      gap: 40px;
     }
 
-    .block {
-      width: 90%;
-      max-width: 800px;
+    .skew-box {
       color: white;
-      padding: 40px 30px;
-      border-radius: 16px;
-      text-align: center;
       font-size: 1.6em;
       font-weight: bold;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      transform: skew(-20deg);
+      padding: 40px 20px;
+      width: 90%;
+      max-width: 700px;
+      position: relative;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
 
-    .red {
-      background: #c0392b;
+    .skew-box span {
+      display: block;
+      transform: skew(20deg);
     }
 
-    .dark {
-      background: #2c3e50;
-    }
+    .red { background-color: #c0392b; }
+    .blue { background-color: #2980b9; }
+    .green { background-color: #27ae60; }
+    .orange { background-color: #e67e22; }
 
-    .green {
-      background: #27ae60;
-    }
-
-    .orange {
-      background: #e67e22;
-    }
   </style>
 </head>
 <body>
 
-  <div class="block red">
-    noc na kolejích<br>komfort na kolejích<br>zážitky kolem kolejí
+  <div class="skew-box red">
+    <span>noc na kolejích</span>
+    <span>komfort na kolejích</span>
+    <span>zážitky kolem kolejí</span>
   </div>
 
-  <div class="block dark">
-    noc na kolejích prežijete v<br>přestavěné bývalé stanici
+  <div class="skew-box blue">
+    <span>noc na kolejích prežijete v</span>
+    <span>přestavěné bývalé stanici</span>
   </div>
 
-  <div class="block green">
-    noc na bývalej stanici<br>v komfortně zariadených apartmánoch
+  <div class="skew-box green">
+    <span>noc na bývalej stanici</span>
+    <span>v komfortně zariadených apartmánoch</span>
   </div>
 
-  <div class="block orange">
-    atraktívne výlety po<br>okolitých vínnych sklepoch<br>na kolech i pěšky
+  <div class="skew-box orange">
+    <span>atraktívne výlety po</span>
+    <span>okolitých vínnych sklepoch</span>
+    <span>na kolech i pěšky</span>
   </div>
 
 </body>
