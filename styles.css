@@ -33,6 +33,10 @@ html, body {
     font-weight: bold;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     line-height: 1.2;
+
+    width: 191px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .shape {
     background: #c41e3a;
@@ -42,6 +46,10 @@ html, body {
     display: inline-block;
     clip-path: polygon(0 0, 100% 5px, 100% 100%, 0 100%);
     line-height: 1.2;
+    
+    width: 191px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .main {
     position: absolute;
