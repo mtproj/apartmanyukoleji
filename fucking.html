@@ -5,71 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Koleje Leták</title>
   <style>
-    body {
-      margin: 0;
-      background: #f3f3f3;
-      font-family: Arial, sans-serif;
-      padding: 60px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 60px;
-    }
-
-    .parallelogram {
-      transform: skew(-20deg);
-      width: 90%;
-      max-width: 900px;
-      padding: 60px 40px;
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
-      text-align: center;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      position: relative;
-    }
-
-    .parallelogram span {
-      display: block;
-      transform: skew(20deg); /* counter-skew text */
-    }
-
-    .red { background: #c0392b; }
-    .blue { background: #2980b9; }
-    .green { background: #27ae60; }
-    .orange { background: #e67e22; }
-
-    @media (max-width: 600px) {
-      .parallelogram {
-        font-size: 1.2em;
-        padding: 40px 20px;
-      }
+    .shape {
+        background: #c41e3a;
+        color: white;
+        padding: 8px 16px;
+        font-weight: bold;
+        font-size: 12px;
+        display: inline-block;
+        clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
+        line-height: 1.2;
     }
   </style>
 </head>
 <body>
-
-  <div class="parallelogram red">
-    <span>noc na kolejích</span>
-    <span>komfort na kolejích</span>
-    <span>zážitky kolem kolejí</span>
-  </div>
-
-  <div class="parallelogram blue">
-    <span>noc na kolejích prežijete v</span>
-    <span>přestavěné bývalé stanici</span>
-  </div>
-
-  <div class="parallelogram green">
-    <span>noc na bývalej stanici</span>
-    <span>v komfortne zariadených apartmánoch</span>
-  </div>
-
-  <div class="parallelogram orange">
-    <span>atraktívne výlety po</span>
-    <span>okolitých vínnych sklepoch</span>
-    <span>na kolech i pěšky</span>
-  </div>
-
+    <div class="shape">
+        hellou
+    </div>
 </body>
 </html>
