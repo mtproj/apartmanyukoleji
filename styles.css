@@ -7,14 +7,25 @@ body {
     background: #1f1f1f;
     color: #f0f0f0;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .rootelem {
     background: #fff;
     color: #000;
     padding: 8px 16px;
     font-size: 12px;
-    display: inline-block;
-    clip-path: polygon(0 0, 100% 0, 100% 25, 0 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 25%, 0 100%);
+    position: relative;
 }
+
 .shape {
     background: #c41e3a;
     color: white;
