@@ -3,63 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kosodélníky z PDF</title>
+  <title>Koleje Leták</title>
   <style>
     body {
       margin: 0;
-      padding: 40px 0;
-      font-family: sans-serif;
-      background: #f0f0f0;
+      background: #f3f3f3;
+      font-family: Arial, sans-serif;
+      padding: 60px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 60px;
     }
 
-    .skew-box {
+    .parallelogram {
+      transform: skew(-20deg);
+      width: 90%;
+      max-width: 900px;
+      padding: 60px 40px;
       color: white;
-      font-size: 1.6em;
+      font-size: 2em;
       font-weight: bold;
       text-align: center;
-      transform: skew(-20deg);
-      padding: 40px 20px;
-      width: 90%;
-      max-width: 700px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
       position: relative;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
 
-    .skew-box span {
+    .parallelogram span {
       display: block;
-      transform: skew(20deg);
+      transform: skew(20deg); /* counter-skew text */
     }
 
-    .red { background-color: #c0392b; }
-    .blue { background-color: #2980b9; }
-    .green { background-color: #27ae60; }
-    .orange { background-color: #e67e22; }
+    .red { background: #c0392b; }
+    .blue { background: #2980b9; }
+    .green { background: #27ae60; }
+    .orange { background: #e67e22; }
 
+    @media (max-width: 600px) {
+      .parallelogram {
+        font-size: 1.2em;
+        padding: 40px 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="skew-box red">
+  <div class="parallelogram red">
     <span>noc na kolejích</span>
     <span>komfort na kolejích</span>
     <span>zážitky kolem kolejí</span>
   </div>
 
-  <div class="skew-box blue">
+  <div class="parallelogram blue">
     <span>noc na kolejích prežijete v</span>
     <span>přestavěné bývalé stanici</span>
   </div>
 
-  <div class="skew-box green">
+  <div class="parallelogram green">
     <span>noc na bývalej stanici</span>
-    <span>v komfortně zariadených apartmánoch</span>
+    <span>v komfortne zariadených apartmánoch</span>
   </div>
 
-  <div class="skew-box orange">
+  <div class="parallelogram orange">
     <span>atraktívne výlety po</span>
     <span>okolitých vínnych sklepoch</span>
     <span>na kolech i pěšky</span>
