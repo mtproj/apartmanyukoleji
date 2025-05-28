@@ -25,7 +25,7 @@ body {
     align-items: center;
     text-align: center;
 }
-.logo::before {
+.logo {
     background-image: url('/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
