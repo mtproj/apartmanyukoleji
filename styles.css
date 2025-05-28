@@ -36,6 +36,6 @@ body {
     position: absolute;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%) scale(0.5);
+    transform: scale(0.5) translateX(-50%);
     text-align: center;
 }
