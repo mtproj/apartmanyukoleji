@@ -26,5 +26,5 @@ body {
     text-align: center;
 }
 .logo::before {
-    background-image: var(--logo);
+    content: '<img src="'+var(--logo)+'" alt="Logo">';
 }
