@@ -7,6 +7,14 @@ body {
     background: #1f1f1f;
     color: #f0f0f0;
 }
+.rootelem {
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 12px;
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 0, 100% 25, 0 100%);
+}
 .shape {
     background: #c41e3a;
     color: white;
@@ -41,12 +49,4 @@ body {
 .top-inner {
     transform: scale(0.5);
     transform-origin: top center;
-}
-.rootelem {
-    background: #fff;
-    color: #000;
-    padding: 8px 16px;
-    font-size: 12px;
-    display: inline-block;
-    clip-path: polygon(0 0, 100% 0, 100% 25, 0 100%);
 }
