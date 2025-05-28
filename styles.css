@@ -31,6 +31,7 @@ body {
     display: inline-block;
     clip-path: polygon(0 0, 100% 0, 100% 25, 0 100%);
     line-height: 1.2;
+    size: max-content;
 }
 .logo {
     background-image: url('/logo.png');
