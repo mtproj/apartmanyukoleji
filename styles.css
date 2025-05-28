@@ -97,12 +97,15 @@ html, body {
     align-items: center;
     justify-content: center;
 
-    height: 128px;
-    width: 128px;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
+    height: 130px;
+    width: 130px;
 
     margin-left: 50px;
     margin-right: 50px;
+}
+.mpcc {
+    height: 128px; /* alebo koľko chceš, napr. polka boxu */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
