@@ -1,3 +1,6 @@
+:root {
+    --logo: url('/logo.png');
+}
 body {
     font-family: Arial, sans-serif;
     padding: 50px;
@@ -21,4 +24,7 @@ body {
     transform: translate(-50%, -50%);
     align-items: center;
     text-align: center;
+}
+.logo::before {
+    background-image: var(--logo);
 }
