@@ -35,7 +35,7 @@ html, body {
     line-height: 1.2;
 
     width: 191px;
-    overflow: hidden;
+    height: auto;
     text-overflow: ellipsis;
 }
 .shape {
@@ -48,7 +48,7 @@ html, body {
     line-height: 1.2;
 
     width: 191px;
-    overflow: hidden;
+    height: auto;
     text-overflow: ellipsis;
 }
 .main {
