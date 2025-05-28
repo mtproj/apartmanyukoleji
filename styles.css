@@ -25,6 +25,9 @@ body {
     align-items: center;
     text-align: center;
 }
-.logo::before {
+.logo {
     background-image: var(--logo);
+}
+.logo.mainlogo {
+    height: 200px;
 }
